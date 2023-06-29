@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Tables,Span,Div and Forms
+        </title>
+    </head>
+    <body>
+        <!--
+            GROUPING HTML
+            span:inline container
+            div : block container
+        -->
+        <h1><span style="background-color: tomato;">This is span heading</span></h1>
+        <h1>
+            <div style="background-color: aqua;">
+                This is a div heading
+            </div>
+        </h1>
+
+        <!--
+            LISTS
+        -->
+
+        <!--Unordered Lists-->
+        <h4>Groceries</h4>
+        <ul>
+            <li>Milk</li>
+            <li>Eggs</li>
+            <li>Maggi</li>
+            <li>Coffee Supples</li>
+            <ul>
+                <li>Coffee Beans</li>
+                <li>Creamer</li>
+                <li>Sugar</li>
+            </ul>
+        </ul>
+
+        <!--Ordered Lists-->
+        <h4>To Do List</h4>
+        <ol>
+            <li>Gym</li>
+            <li>Breakfast</li>
+            <li>Office</li>
+            <li>Sleep</li>
+            <li>Repeat</li>
+        </ol>
+
+        <!--Description Lists-->
+        <dl>
+            <dt>title1</dt>
+            <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis iusto animi, sed assumenda pariatur nulla aut temporibus porro dolorum omnis sapiente eos placeat eius. Voluptas possimus molestias corporis iste alias.</dd>
+            <dt>title2</dt>
+            <dd>lorem</dd>
+            <dt>title3</dt>
+            <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, enim laborum rem error alias distinctio id praesentium reiciendis at dolor fugiat quia porro, ipsa voluptatem nemo voluptatibus, facilis vitae saepe!</dd>
+
+        </dl>
+
+        <!--
+            Tables
+        -->
+        <h4>Store Timings</h4>
+        <table border="1" style="background-color: beige;">
+            <tr align="center">
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr align="center">
+                <td>Closed</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>10-2</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+
+        <!--
+            BUTTONS
+        -->
+        <a href="https://www.google.com" target="_blank">
+        <button style="font-size: 25;background-color: cadetblue;">Click Me</button>
+        </a>
+
+        <br>
+        <br>
+        
+        <p id="jscheck">This is the old text</p>
+        <button onclick="changeText()" style="font-size: 25;">
+            Change Above Text
+        </button>
+
+        <script>
+            function changeText(){
+                document.getElementById("jscheck").innerHTML = "This is the new text";
+            }
+        </script>
+   </body>
+</html>
